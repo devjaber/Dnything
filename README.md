@@ -1,118 +1,221 @@
-[# Dnything
+<div align="center">
 
-> Download anything. Fast.
+<img src="./DataStream.png" alt="Dnything Data Stream logo" width="170">
 
-Dnything is a fast, precise and self-contained downloader for Windows. It is designed to handle direct files, video and audio downloads in one clean, focused application.
+# Dnything
 
-## Logo
+### Download anything. Fast.
 
-The exact product name is **Dnything**.
+**One focused Windows downloader for files, videos, and audio.**  
+Fast transfers. Smart media detection. Full control. No complicated setup.
 
-The black-and-white **Data Stream** logo is built from four unequal data lanes. The lanes represent speed, download queues and support for different file types without relying on the usual download-arrow cliché.
+[![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-111111?style=for-the-badge&logo=windows11&logoColor=white)](https://github.com/devjaber/Dnything/releases)
+![Architecture](https://img.shields.io/badge/Architecture-x64-222222?style=for-the-badge)
+![Standalone](https://img.shields.io/badge/Build-Standalone-333333?style=for-the-badge)
+
+**[Download for Windows](https://github.com/devjaber/Dnything/releases) · [Explore Features](#features) · [Supported Platforms](#supported-platforms) · [Get Started](#getting-started)**
+
+</div>
+
+---
+
+<div align="center">
+  <img src="./dnything.png" alt="Dnything Windows downloader overview" width="900">
+  <p><sub>A clean, black-and-white experience built around your downloads.</sub></p>
+</div>
+
+## Meet Dnything
+
+**Dnything** is a lightweight, self-contained download manager for **Windows 10 and 11 (x64)**. Download direct files, save supported online videos and audio, manage multiple transfers, and choose the available quality—all from one streamlined desktop app.
+
+It combines **segmented HTTP/HTTPS downloading** with the media extraction capabilities of **yt-dlp** and **FFmpeg**, without requiring you to install those tools separately.
+
+> **Paste a link. Choose a format. Download.**
 
 ## Features
 
-- Direct HTTP/HTTPS file downloads
-- Segmented downloads for faster transfers
-- Video and audio downloads through embedded `yt-dlp` and `FFmpeg`
-- Quality presets from low resolution to the highest quality available from the source
-- Automatic media detection for supported video, audio and social platforms
-- Pause, resume, retry and cancel controls
-- Download queue and local history
-- Duplicate active-download protection
-- Clipboard URL detection
-- Custom save folder
-- Per-file connection settings
-- Parallel download control
-- Download speed limit
-- Progress, speed, file size and status information
-- Smooth black-and-white interface
-- Outfit typography and Lucide-style interface icons
-- Rounded controls and a draggable window surface
+| | What you get |
+|:--|:--|
+| **Direct downloads** | Download files through HTTP and HTTPS, including ZIP, EXE, PDF, images, archives, and more. |
+| **Segmented transfers** | Use multiple connections for faster direct downloads when the server supports range requests. |
+| **Video & audio** | Download supported media using bundled `yt-dlp` and `FFmpeg`. |
+| **Smart detection** | Automatically identify supported file and media URLs. |
+| **Quality selection** | Choose the best available quality or a preferred resolution. |
+| **Download controls** | Pause, resume, retry, and cancel supported transfers. |
+| **Queue & history** | Keep track of current, completed, and previous downloads locally. |
+| **Duplicate protection** | Avoid adding duplicate active downloads. |
+| **Clipboard detection** | Detect a copied URL for quicker downloads. |
+| **Flexible settings** | Set your save folder, per-file connections, parallel downloads, and speed limits. |
+| **Live information** | See progress, speed, transferred bytes, file size, and status. |
+| **Minimal interface** | Monochrome UI, Outfit typography, Lucide-style icons, and rounded controls. |
 
-## Supported download types
+## The App in Action
 
-### Direct files
+### 01 — Open Dnything
 
-HTTP and HTTPS URLs that point to downloadable files, including archives, installers, documents, images and other binary files.
+Launch the application, paste a link, and select **Auto Detect**, **Direct File**, **Video**, or **Audio**.
 
-### Video and audio
+<div align="center">
+  <img src="./Openapp.png" alt="Dnything application interface" width="850">
+</div>
 
-Dnything can use supported media pages from services such as YouTube, Vimeo, TikTok, Instagram, Facebook, X/Twitter, Twitch, SoundCloud and Dailymotion. Availability and quality depend on the source service and the media URL.
+### 02 — Download Direct Files
 
-## Quality options
+Get installers, documents, archives, images, and other files from standard HTTP/HTTPS links. Adjust connection settings and manage transfers from the same window.
 
-Depending on the source, Dnything can request:
+<div align="center">
+  <img src="./Directfiles.png" alt="Dnything direct file download interface" width="850">
+</div>
 
-- Best quality
-- 4K / 2160p
-- 2K / 1440p
-- Full HD / 1080p
-- HD / 720p
-- SD / 480p
-- Low / 360p
+### 03 — Choose Your Quality
 
-## Getting started
+For supported media, select a quality preset before downloading. Available formats depend on the source video or audio.
 
-1. Download the latest `Dnything.exe` from the [Releases](../../releases) page.
-2. Run the executable on a supported Windows computer.
-3. Paste a URL into the download field.
-4. Choose `Auto Detect`, `Direct File`, `Video` or `Audio`.
-5. Select the desired quality when media quality options are available.
-6. Choose a save folder if needed, then select **Download**.
+<div align="center">
+  <img src="./Qualityoptions.png" alt="Dnything video quality selection options" width="850">
+</div>
 
-## Standalone operation
+## Supported Platforms
 
-Dnything is published as a self-contained, single-file Windows x64 application.
+### Download from Popular Social Media, Video & Audio Platforms
 
-You do not need to install:
+Dnything uses **yt-dlp** to handle media URLs from many popular websites. Examples include:
 
-- .NET Runtime
-- FFmpeg
-- yt-dlp
-- A separate downloader service
+| Category | Platforms |
+|:--|:--|
+| **Social media** | **YouTube**, **Instagram**, **TikTok**, **Facebook**, **X (Twitter)**, **Reddit**, **Pinterest**, **Tumblr**, **Bluesky**, **LinkedIn**, **VK**, **Likee** |
+| **Video & streaming** | **Vimeo**, **Twitch**, **Dailymotion**, **Rumble**, **Bilibili**, **PeerTube** |
+| **Music & audio** | **SoundCloud**, **Bandcamp**, **Mixcloud** |
+| **Direct downloads** | Any accessible **HTTP/HTTPS file URL** supported by the source server |
 
-The media tools are embedded in the executable. On the first media download, Dnything extracts the required runtime tools automatically into the current user's local application data directory:
+**Popular content types:** YouTube videos and Shorts, TikTok videos, Instagram Reels, Facebook videos, X posts with media, online clips, and audio tracks—**when the source and its extractor support them**.
+
+**More websites:** yt-dlp provides extractors for many additional services. See the [official yt-dlp supported-sites list](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md).
+
+> **Compatibility note:** No downloader can guarantee every link from every social network. Platform changes, login requirements, geographic restrictions, DRM, unavailable formats, and source limitations may affect downloads. Listing a platform here does not mean every URL or content type is supported. Dnything does not bypass protected or private content.
+
+## Quality Options
+
+Choose from the formats offered by the source:
+
+| Preset | Resolution |
+|:--|:--|
+| **Best Available** | Highest available quality |
+| **4K / UHD** | 2160p |
+| **2K / QHD** | 1440p |
+| **Full HD** | 1080p |
+| **HD** | 720p |
+| **SD** | 480p |
+| **Low** | 360p |
+
+For audio-only downloads, output formats and quality depend on the available source streams and the app's media processing options.
+
+## Download
+
+### Windows — Standalone x64
+
+**[Get Dnything.exe from GitHub Releases](https://github.com/devjaber/Dnything/releases)**
+
+Dnything is distributed as a **single-file, self-contained Windows application**. When a build is published, download `Dnything.exe` from the Releases page and run it—no separate setup for .NET, yt-dlp, or FFmpeg is required.
+
+> **Release availability:** The download is available once a release containing `Dnything.exe` has been published. Always use a release you trust.
+
+## Getting Started
+
+1. Open the [Releases page](https://github.com/devjaber/Dnything/releases) and get `Dnything.exe` when available.
+2. Run the app on a compatible **Windows 10 or Windows 11 x64** computer.
+3. Paste a direct file link or a supported media URL.
+4. Select **Auto Detect**, **Direct File**, **Video**, or **Audio**.
+5. If you're downloading media, select the desired **quality** when available.
+6. Choose a **save folder**, then click **Download**.
+7. Monitor progress or use the queue controls to manage your downloads.
+
+## Standalone by Design
+
+The Windows x64 build includes what it needs for downloads:
+
+- **Self-contained .NET application** — no separate .NET Runtime installation.
+- **Embedded yt-dlp** — no manual installation of the media downloader.
+- **Embedded FFmpeg** — no manual installation of the media processing tools.
+- **No separate background download service** — the app handles its own queue and history.
+
+On the first media download, the required bundled runtime tools are extracted to:
 
 ```text
-%LOCALAPPDATA%\\Dnything\\runtime-tools
+%LOCALAPPDATA%\Dnything\runtime-tools
 ```
 
-## System requirements
+## System Requirements
 
-- Windows 10 or Windows 11
-- 64-bit x64 processor
-- Internet connection for remote downloads
-- Write permission for the selected save folder
+| Requirement | Details |
+|:--|:--|
+| **Operating system** | Windows 10 or Windows 11 |
+| **Architecture** | 64-bit x64 |
+| **Connection** | Internet access for online downloads |
+| **Storage** | Enough free disk space and permission to write to the chosen folder |
 
-The current release is not built for 32-bit Windows, ARM Windows or macOS.
+The current build is **not** intended for 32-bit Windows, Windows on ARM, or macOS.
 
-## Privacy and local data
+## Privacy & Local Data
 
-- No account is required to use Dnything.
-- Download settings, history and queue data are stored locally on the computer.
-- Dnything does not provide or bypass access to private, restricted or protected content.
-- The user is responsible for the URLs they enter and the content they download.
-
-## Responsible use
-
-Only download content that you own or have permission to download. Respect the terms of service, copyright and applicable laws for every source you use.
+- **No account required** to use the application.
+- Download settings, queue information, and history are stored **locally** on your computer.
+- Downloaded files go to your chosen save location.
+- Dnything does not unlock private, restricted, or DRM-protected content.
+- Online download requests still connect to the source websites and services you use.
 
 ## Troubleshooting
 
-### Windows shows a SmartScreen warning
+<details>
+<summary><b>Windows SmartScreen shows a warning</b></summary>
 
-The standalone executable may be unsigned. If you trust the file source, choose **More info** and then **Run anyway**.
+The executable may be unsigned. Confirm that the download came from a trusted release, verify the file as appropriate, and follow your organization's security policy before running it.
 
-### A media URL does not work
+</details>
 
-Check that the URL is public and valid, try `Auto Detect`, and make sure the source service is reachable. Media services can change their page formats or restrict downloads.
+<details>
+<summary><b>A social media or video URL does not work</b></summary>
 
-### The download is slow
+Confirm that the URL is valid and accessible. Try **Auto Detect**. Some websites change their media formats or require access that Dnything does not provide. Not every supported website or media format is guaranteed to work.
 
-Check the source server and your connection, confirm that the save drive has free space, and review the connection and speed-limit settings.
+</details>
+
+<details>
+<summary><b>My download is slow</b></summary>
+
+Check your internet connection, destination disk space, source server, speed limit, and connection settings. Segmented downloading only helps when the source server supports it.
+
+</details>
+
+<details>
+<summary><b>My preferred resolution is missing</b></summary>
+
+Dnything can only request qualities available from the source and supported by its media extractor. Try **Best Available** or another preset.
+
+</details>
+
+## Responsible Use
+
+Download only content you own or are authorized to download. Respect applicable laws, copyright, and each source service's terms. Dnything is a general-purpose download manager, not a tool for bypassing access restrictions or DRM.
+
+## Project & Credits
+
+- **Product:** Dnything
+- **Design identity:** Data Stream — four unequal lanes representing data flow, speed, and multiple download types.
+- **Repository:** [github.com/devjaber/Dnything](https://github.com/devjaber/Dnything)
+- **Media engine:** [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+- **Media processing:** [FFmpeg](https://ffmpeg.org/)
 
 ## License
 
-The repository license and redistribution terms should be added before distributing modified versions or derivative builds.
-](https://github.com/devjaber/Dnything/releases/edit/untagged-def916cf889408f2038f)
+A repository license has not yet been specified. Add a `LICENSE` file defining the project's terms before inviting reuse, modification, or redistribution.
+
+---
+
+<div align="center">
+
+**Dnything — Download anything. Fast.**
+
+Built for Windows. Designed to stay out of your way.
+
+</div>
