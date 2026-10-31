@@ -112,15 +112,6 @@ Check that the URL is public and valid, try `Auto Detect`, and make sure the sou
 
 Check the source server and your connection, confirm that the save drive has free space, and review the connection and speed-limit settings.
 
-## Release verification
-
-For the current Windows x64 executable:
-
-## Release assets
-
-- `Dnything-v1.0.0-win-x64.exe` — standalone application
-- `Dnything-brand-kit-v1.0.0.zip` — optional logo and identity files
-
 ## License
 
 The repository license and redistribution terms should be added before distributing modified versions or derivative builds.
