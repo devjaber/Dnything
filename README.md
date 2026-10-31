@@ -1,4 +1,4 @@
-# Dnything
+[# Dnything
 
 > Download anything. Fast.
 
@@ -115,3 +115,4 @@ Check the source server and your connection, confirm that the save drive has fre
 ## License
 
 The repository license and redistribution terms should be added before distributing modified versions or derivative builds.
+](https://github.com/devjaber/Dnything/releases/edit/untagged-def916cf889408f2038f)
